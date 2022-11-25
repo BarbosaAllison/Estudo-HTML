@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    font-size: 19px;
+    transition: .5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li:hover {
+    color:red;
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/239a0472-760a-4a00-b07f-72e016466436/d85uiwj-bce56ec0-7042-4f68-9d10-60a19f4c2490.jpg/v1/fill/w_1024,h_474,q_75,strp/interstellar__hi_res_textless_banner__by_ihaveanawesomename_d85uiwj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDc0IiwicGF0aCI6IlwvZlwvMjM5YTA0NzItNzYwYS00YTAwLWIwN2YtNzJlMDE2NDY2NDM2XC9kODV1aXdqLWJjZTU2ZWMwLTcwNDItNGY2OC05ZDEwLTYwYTE5ZjRjMjQ5MC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.T4M5jmzQAj0J083ZM3BWYax7EU6bfnjcopGLx2k6p0c);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+
+#trailer-cont {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.contend {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+.button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.actor-cards-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px; 
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+.banner-1 {
+    background-image: url(https://www.hollywoodreporter.com/wp-content/uploads/2014/12/matthew_a.jpg?w=1024);
+}
+.banner-2 {
+    background-image: url(https://i.pinimg.com/originals/22/eb/ef/22ebef481bec71ad52fef4882674c7de.jpg);
+}
+.banner-3 {
+    background-image: url(https://i.pinimg.com/736x/fd/c8/a8/fdc8a8258e830dd2c8eded48f19dced9.jpg);
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-navigation {
+    display: none;
+}
+@media(max-width: 768px){
+    .footer-navigation{display: block;
+                        }
+        nav {
+            display: none;
+        }                
+        #banner {
+            background-position: 40%;
+        }
+        #trailer-cont {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        .contend{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+        }
+        .trailer {
+            width: 100%;
+        }
+        #sinopse {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .description {
+            width: 100%;
+        }
+        .button {
+            width: 100%;
+            margin-top: 30px;
+        }
+        .cards-content {
+            grid-template-columns: 1fr;
+            margin-top: 150px;
+        }
+        .footer-list {
+            display: none;
+        }
+}
+.inf {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+#hist-1 {
+    background-image: url(https://i0.wp.com/www.fiz-x.com/wp-content/uploads/2013/08/interstellar-poster.jpg?ssl=1);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    
+}
+
+.descrip {
+    color: #fff;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 70%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.coment {
+    margin: 0;
+    padding: 0;
+    background-color: #D21617;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
